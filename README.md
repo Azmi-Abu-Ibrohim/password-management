@@ -1,16 +1,59 @@
-# pass_manager
+Password Management – Aplikasi Flutter CRUD
 
-A new Flutter project.
+Aplikasi Flutter untuk mengelola data password. Proyek ini saya buat untuk menampilkan fitur CRUD lengkap (Create, Read, Update, Delete) menggunakan SQLite (`sqflite`) dan antarmuka Flutter.
 
-## Getting Started
+---
 
-This project is a starting point for a Flutter application.
+Fitur Utama
+- Menambahkan data password baru  
+- Mengedit data yang sudah ada  
+- Menghapus data  
+- Menyimpan data secara lokal menggunakan SQLite  
+- Dialog interaktif untuk input data
 
-A few resources to get you started if this is your first Flutter project:
+---
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+Dependensi
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+Tambahkan ke `pubspec.yaml`:
+```yaml
+dependencies:
+  flutter:
+    sdk: flutter
+  sqflite: ^2.3.0
+  path_provider: ^2.1.0
+```
+
+---
+
+Cara Menjalankan
+
+1. Clone repository ini:
+   ```
+   git clone https://github.com/Azmi-Abu-Ibrohim/password-management.git
+   cd password-management
+   ```
+
+2. Jalankan perintah:
+   ```
+   flutter pub get
+   flutter run
+   ```
+
+> Pastikan sudah terpasang Flutter SDK dan emulator Android atau perangkat fisik
+
+---
+
+Struktur Proyek
+
+```
+lib/
+├── main.dart
+├── database_helper.dart
+├── models/
+│   └── password.dart
+```
+
+📌 Catatan
+
+- Proyek ini telah dibersihkan dengan `flutter clean` sebelum diu
